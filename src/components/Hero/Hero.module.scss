@@ -1,0 +1,58 @@
+@import "../../css/variables.scss";
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.image {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  @include section-center;
+  @include flex-col;
+  height: 100%;
+  justify-content: center;
+  padding-top: $header-height + 2rem;
+}
+
+.text {
+  h1,
+  p {
+    color: $white-text;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.buttons {
+  @include flex-col;
+
+  button {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  button:first-of-type {
+    @include btn($primary, $white-text);
+  }
+
+  button:not(first-of-type) {
+    @include btn($white, $black);
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .buttons {
+    @include flex-row;
+  }
+
+  button {
+    margin-right: 1rem;
+  }
+}

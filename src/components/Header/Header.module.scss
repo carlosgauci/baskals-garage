@@ -1,15 +1,18 @@
 @import "../../css/variables.scss";
 
 .header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.5rem;
   @include section-center;
   @include flex-row;
-  position: relative;
   align-items: center;
   justify-content: space-between;
   padding: 0 8%;
-  margin-top: 1.5rem;
-  height: 3.5rem;
+  height: $header-height;
   background-color: transparent;
+  z-index: 5;
 }
 
 .clippedBG {
@@ -25,7 +28,7 @@
 .logo {
   height: 4.5rem;
   background-color: $primary;
-  z-index: 99;
+  z-index: 10;
   @include flex-row;
   align-items: center;
   padding: 0 1rem;
@@ -37,6 +40,6 @@
 
 .navIcon {
   width: 2rem;
-  z-index: 999;
+  z-index: 10;
   justify-self: flex-end;
 }

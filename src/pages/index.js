@@ -1,8 +1,9 @@
-import * as React from "react"
+import React from "react"
+import Hero from "../components/Hero/Hero"
 
 const IndexPage = () => (
   <>
-    <h1>Index</h1>
+    <Hero />
   </>
 )
 
