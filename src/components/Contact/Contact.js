@@ -1,10 +1,10 @@
 import React from "react"
 import { LocationPin, Mail, Phone, Clock, Facebook } from "../../images/svg"
-import { contact, list, svg } from "./Contact.module.scss"
+import { list, svg } from "./Contact.module.scss"
 
 const Contact = () => {
   return (
-    <section className={contact}>
+    <section>
       <h4>Contact Us</h4>
       <ul className={list}>
         <li>

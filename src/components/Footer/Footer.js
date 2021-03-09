@@ -1,11 +1,15 @@
 import React from "react"
 import Contact from "../Contact/Contact"
-import { footer } from "./Footer.module.scss"
+import FindUs from "../FindUs/FindUs"
+import { footer, container } from "./Footer.module.scss"
 
 const Footer = () => {
   return (
     <footer className={footer}>
-      <Contact />
+      <section className={container}>
+        <Contact />
+        <FindUs />
+      </section>
     </footer>
   )
 }

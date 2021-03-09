@@ -4,4 +4,27 @@
   width: 100%;
   background-color: $black;
   padding: 2rem 0;
+
+  h4,
+  p {
+    color: $white-text;
+  }
+  h4 {
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 1.5rem;
+      height: 1rem;
+      border-bottom: 0.2rem solid $primary;
+      position: absolute;
+      bottom: -0.25rem;
+      left: 0;
+    }
+  }
+}
+
+.container {
+  @include section-center;
 }

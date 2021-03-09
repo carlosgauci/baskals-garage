@@ -1,28 +1,5 @@
 @import "../../css/variables.scss";
 
-.contact {
-  @include section-center;
-
-  h4,
-  p {
-    color: $white-text;
-  }
-  h4 {
-    margin-bottom: 1.5rem;
-    position: relative;
-
-    &:after {
-      content: "";
-      width: 1.5rem;
-      height: 1rem;
-      border-bottom: 0.2rem solid $primary;
-      position: absolute;
-      bottom: -0.25rem;
-      left: 0;
-    }
-  }
-}
-
 .list {
   li {
     display: grid;
