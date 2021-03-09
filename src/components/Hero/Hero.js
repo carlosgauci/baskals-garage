@@ -12,6 +12,8 @@ const Hero = () => {
         loading="eager"
         formats={["AUTO", "WEBP", "AVIF"]}
         style={{ position: "absolute" }}
+        backgroundColor="#111111"
+        placeholder="dominantColor"
         className={image}
       />
       <div className={container}>
