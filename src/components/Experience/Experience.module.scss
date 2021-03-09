@@ -1,18 +1,12 @@
 @import "../../css/variables.scss";
 
-.services {
+.experience {
   @include section-center;
-  @include flex-col;
   padding: 2rem 0;
 
   h2 {
     text-align: center;
     margin-bottom: 2rem;
-  }
-
-  button {
-    @include btn($primary, $white-text);
-    margin: 1.5rem auto;
   }
 }
 
@@ -26,7 +20,7 @@
 }
 
 .single {
-  max-width: 22rem;
+  max-width: 30rem;
   @include flex-col;
   align-items: center;
   margin: 2rem 0;

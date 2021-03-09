@@ -1,11 +1,13 @@
 import React from "react"
 import { data } from "../../data/services"
-import { services, svg, grid, single } from "./Services.module.scss"
+import { services, svg, grid, single, colorText } from "./Services.module.scss"
 
 const Services = () => {
   return (
     <section className={services}>
-      <h2>What We Do</h2>
+      <h2>
+        <span className={colorText}>What </span>We Do
+      </h2>
       <section className={grid}>
         {data.map(service => {
           return (
