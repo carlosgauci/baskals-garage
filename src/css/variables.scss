@@ -42,6 +42,7 @@ $text-font: "Roboto", sans-serif;
   height: 2.2rem;
   background-color: $bg;
   color: $text;
+  position: relative;
 
   &:before {
     content: "";
