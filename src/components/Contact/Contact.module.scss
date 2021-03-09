@@ -1,0 +1,42 @@
+@import "../../css/variables.scss";
+
+.contact {
+  @include section-center;
+
+  h4,
+  p {
+    color: $white-text;
+  }
+  h4 {
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 1.5rem;
+      height: 1rem;
+      border-bottom: 0.2rem solid $primary;
+      position: absolute;
+      bottom: -0.25rem;
+      left: 0;
+    }
+  }
+}
+
+.list {
+  li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 0.5rem;
+    // align-items: center;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.svg {
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
