@@ -9,6 +9,7 @@
     "@fontsource/roboto": "^4.2.2",
     "@react-google-maps/api": "^2.1.1",
     "gatsby": "^3.0.1",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-manifest": "^3.0.0",

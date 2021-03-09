@@ -4,7 +4,7 @@ import { services, svg, grid, single, colorText } from "./Services.module.scss"
 
 const Services = () => {
   return (
-    <section className={services}>
+    <section className={services} id="services">
       <h2>
         <span className={colorText}>What </span>We Do
       </h2>

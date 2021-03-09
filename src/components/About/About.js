@@ -12,7 +12,7 @@ import {
 const About = () => {
   return (
     <>
-      <section className={about}>
+      <section className={about} id="about">
         <StaticImage
           src="../../images/about.jpg"
           alt="A car engine"

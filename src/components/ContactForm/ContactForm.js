@@ -3,7 +3,7 @@ import { container, form } from "./ContactForm.module.scss"
 
 const ContactForm = () => {
   return (
-    <section className={container}>
+    <section className={container} id="contact">
       <h2>Get a Quote</h2>
       <form
         className={form}
