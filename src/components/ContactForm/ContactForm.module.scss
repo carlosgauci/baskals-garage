@@ -1,0 +1,39 @@
+@import "../../css/variables.scss";
+
+.container {
+  background-color: $primary-light;
+  padding: 1rem 1rem;
+  position: relative;
+  z-index: 10;
+  margin-top: 2rem;
+
+  h2 {
+    color: $white-text;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.form {
+  font-family: $text-font;
+  font-size: 0.9rem;
+
+  input {
+    height: 2.5rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+    border: none;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+  }
+
+  button {
+    @include btn($white-text, $black);
+    display: block;
+    margin: 1rem auto;
+  }
+}

@@ -3,7 +3,9 @@
 .footer {
   width: 100%;
   background-color: $black;
-  padding: 2rem 0;
+  padding: 19rem 0 2rem;
+  margin-top: -18rem;
+  z-index: 1;
 
   h4,
   p {

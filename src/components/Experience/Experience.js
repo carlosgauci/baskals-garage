@@ -1,4 +1,5 @@
 import React from "react"
+import ContactForm from "../ContactForm/ContactForm"
 import { data } from "../../data/experience"
 import {
   experience,
@@ -6,12 +7,13 @@ import {
   grid,
   single,
   svg,
+  title,
 } from "./Experience.module.scss"
 
 const Experience = () => {
   return (
     <section className={experience}>
-      <h2>
+      <h2 className={title}>
         <span className={colorText}>Why </span>Choose Us
       </h2>
       <section className={grid}>
@@ -27,6 +29,7 @@ const Experience = () => {
           )
         })}
       </section>
+      <ContactForm />
     </section>
   )
 }

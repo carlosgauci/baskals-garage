@@ -3,11 +3,11 @@
 .experience {
   @include section-center;
   padding: 2rem 0;
+}
 
-  h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .colorText {
