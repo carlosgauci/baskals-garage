@@ -98,6 +98,7 @@ const query = graphql`
           formats: [AUTO, WEBP, AVIF]
           layout: FULL_WIDTH
           placeholder: BLURRED
+          quality: 80
         )
       }
     }
@@ -108,6 +109,7 @@ const query = graphql`
           formats: [AUTO, WEBP, AVIF]
           layout: FULL_WIDTH
           placeholder: BLURRED
+          quality: 80
         )
       }
     }
