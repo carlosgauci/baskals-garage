@@ -22,28 +22,36 @@ const ContactForm = () => {
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact-form" />
+
         <input
           type="text"
           name="name"
           placeholder="Your name"
+          aria-label="Your Name"
           className={name}
         />
+
         <input
           type="email"
           name="email"
           placeholder="Your email address"
+          aria-label="Your email address"
           className={email}
         />
+
         <input
           type="number"
           name="number"
           placeholder="Phone number"
+          aria-label="Your Phone Number"
           className={phone}
         />
+
         <input
           type="text"
           name="company"
           placeholder="Company (optional)"
+          aria-label="Company (optional)"
           className={company}
         />
 
@@ -51,6 +59,7 @@ const ContactForm = () => {
           name="message"
           rows="7"
           placeholder="Type your message here..."
+          aria-label="Your Message"
         ></textarea>
         <button type="submit">Submit</button>
       </form>

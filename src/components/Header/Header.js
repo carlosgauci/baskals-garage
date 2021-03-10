@@ -22,6 +22,7 @@ const Header = ({ navOpen, setNavOpen }) => {
         onClick={() => setNavOpen(!navOpen)}
         onKeyDown={() => setNavOpen(!navOpen)}
         role="button"
+        aria-label="Open Navigation Menu"
         tabIndex={0}
       >
         <NavIcon />
