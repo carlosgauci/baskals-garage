@@ -12,7 +12,11 @@
 
   button {
     @include btn($primary, $white-text);
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
+  }
+  a {
+    display: block;
+    margin: 0 auto;
   }
 }
 

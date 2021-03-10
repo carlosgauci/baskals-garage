@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import {
   hero,
   image,
@@ -40,8 +41,12 @@ const Hero = () => {
             our local community with a smile for over 45 years.
           </p>
           <div className={buttons}>
-            <button className={servicesBtn}>Our Services</button>
-            <button className={contactBtn}>Contact Us</button>
+            <AnchorLink to="/#services">
+              <button className={servicesBtn}>Our Services</button>
+            </AnchorLink>
+            <AnchorLink to="/#contact">
+              <button className={contactBtn}>Contact Us</button>
+            </AnchorLink>
           </div>
         </section>
       </div>

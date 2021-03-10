@@ -1,4 +1,5 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { data } from "../../data/services"
 import { services, svg, grid, single, colorText } from "./Services.module.scss"
 
@@ -21,7 +22,9 @@ const Services = () => {
           )
         })}
       </section>
-      <button>Contact Us</button>
+      <AnchorLink to="/#contact">
+        <button>Contact Us</button>
+      </AnchorLink>
     </section>
   )
 }
