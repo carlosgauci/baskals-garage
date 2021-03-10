@@ -45,3 +45,24 @@
   width: $svg-l;
   margin-bottom: 0.5rem;
 }
+
+@media only screen and (min-width: 768px) {
+  .services {
+    padding: 3rem 0;
+
+    h2 {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .grid {
+    @include flex-row;
+    flex-wrap: wrap;
+    align-items: unset;
+    justify-content: space-around;
+  }
+
+  .single {
+    margin: 3rem 1rem;
+  }
+}
