@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Baskal's Garage`,
     description: `Your one stop shop for mechanical repairs & vehicle servicing in Gozo.`,
-    author: `@gatsbyjs`,
+    url: `https://www.baskalsgarage.com/`,
+    image: `img.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
