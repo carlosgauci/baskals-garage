@@ -28,7 +28,6 @@ const Hero = () => {
         image={images}
         alt="Mechanic fixing a vehicle"
         loading="eager"
-        placeholder="blurred"
         className={image}
         style={{ position: "absolute" }}
       />
@@ -57,7 +56,7 @@ const query = graphql`
         gatsbyImageData(
           formats: [AUTO, WEBP, AVIF]
           layout: FULL_WIDTH
-          placeholder: DOMINANT_COLOR
+          placeholder: BLURRED
         )
       }
     }
@@ -67,7 +66,7 @@ const query = graphql`
         gatsbyImageData(
           formats: [AUTO, WEBP, AVIF]
           layout: FULL_WIDTH
-          placeholder: DOMINANT_COLOR
+          placeholder: BLURRED
         )
       }
     }
