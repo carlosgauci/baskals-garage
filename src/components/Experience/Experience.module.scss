@@ -41,6 +41,14 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .experience {
+    padding: 3rem 0;
+  }
+
+  .title {
+    margin-bottom: 3rem;
+  }
+
   .grid {
     @include flex-row;
     flex-wrap: wrap;

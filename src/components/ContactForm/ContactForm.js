@@ -1,5 +1,12 @@
 import React from "react"
-import { container, form } from "./ContactForm.module.scss"
+import {
+  container,
+  form,
+  name,
+  email,
+  phone,
+  company,
+} from "./ContactForm.module.scss"
 
 const ContactForm = () => {
   return (
@@ -15,10 +22,30 @@ const ContactForm = () => {
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact-form" />
-        <input type="text" name="name" placeholder="Your name" />
-        <input type="email" name="email" placeholder="Your email address" />
-        <input type="number" name="number" placeholder="Phone number" />
-        <input type="text" name="company" placeholder="Company (optional)" />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          className={name}
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email address"
+          className={email}
+        />
+        <input
+          type="number"
+          name="number"
+          placeholder="Phone number"
+          className={phone}
+        />
+        <input
+          type="text"
+          name="company"
+          placeholder="Company (optional)"
+          className={company}
+        />
 
         <textarea
           name="message"
