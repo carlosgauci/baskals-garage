@@ -8,6 +8,7 @@ import {
   single,
   svg,
   title,
+  text,
 } from "./Experience.module.scss"
 
 const Experience = () => {
@@ -23,8 +24,10 @@ const Experience = () => {
               <div className={svg}>
                 <item.icon />
               </div>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              <section className={text}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </section>
             </article>
           )
         })}

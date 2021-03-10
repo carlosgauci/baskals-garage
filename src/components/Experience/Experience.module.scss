@@ -20,7 +20,7 @@
 }
 
 .single {
-  max-width: 30rem;
+  max-width: 25rem;
   @include flex-col;
   align-items: center;
   margin: 2rem 0;
@@ -38,4 +38,41 @@
 .svg {
   width: $svg-l;
   margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: unset;
+  }
+
+  .single {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: unset;
+    margin: 2rem 4rem;
+
+    p,
+    h3 {
+      text-align: left;
+    }
+  }
+
+  .svg {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .single {
+    max-width: 22rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .single {
+    max-width: 28rem;
+  }
 }
