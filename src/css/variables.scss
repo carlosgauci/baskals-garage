@@ -47,6 +47,11 @@ $svg-s: 1.25rem;
   color: $text;
   position: relative;
 
+  @media (min-width: 768px) {
+    width: 10rem;
+    height: 2.5rem;
+  }
+
   &:before {
     content: "";
     width: 1rem;

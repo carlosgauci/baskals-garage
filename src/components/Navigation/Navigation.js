@@ -14,7 +14,13 @@ const Navigation = ({ setNavOpen }) => {
           <Navlinks setNavOpen={setNavOpen} />
         </div>
       </section>
-      <span className={back} onClick={() => setNavOpen(false)}>
+      <span
+        className={back}
+        onClick={() => setNavOpen(false)}
+        onKeyDown={() => setNavOpen(false)}
+        role="button"
+        tabIndex={0}
+      >
         <Back />
       </span>
     </nav>

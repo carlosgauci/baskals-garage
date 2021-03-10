@@ -1,20 +1,36 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { hero, image, text, container, buttons } from "./Hero.module.scss"
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
+import {
+  hero,
+  image,
+  text,
+  container,
+  buttons,
+  servicesBtn,
+  contactBtn,
+} from "./Hero.module.scss"
 
 const Hero = () => {
+  const { small, large } = useStaticQuery(query)
+  const heroSmall = getImage(small)
+  const heroLarge = getImage(large)
+  const images = withArtDirection(heroSmall, [
+    {
+      media: "(min-width: 768px)",
+      image: heroLarge,
+    },
+  ])
+
   return (
     <section className={hero}>
-      <StaticImage
-        src="../../images/hero.jpg"
+      <GatsbyImage
+        image={images}
         alt="Mechanic fixing a vehicle"
-        layout="fullWidth"
         loading="eager"
-        formats={["AUTO", "WEBP", "AVIF"]}
-        style={{ position: "absolute" }}
-        backgroundColor="#111111"
-        placeholder="dominantColor"
+        placeholder="blurred"
         className={image}
+        style={{ position: "absolute" }}
       />
       <div className={container}>
         <section className={text}>
@@ -25,13 +41,37 @@ const Hero = () => {
             our local community with a smile for over 45 years.
           </p>
           <div className={buttons}>
-            <button>Our Services</button>
-            <button>Contact Us</button>
+            <button className={servicesBtn}>Our Services</button>
+            <button className={contactBtn}>Contact Us</button>
           </div>
         </section>
       </div>
     </section>
   )
 }
+
+const query = graphql`
+  {
+    small: file(relativePath: { eq: "hero.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          formats: [AUTO, WEBP, AVIF]
+          layout: FULL_WIDTH
+          placeholder: DOMINANT_COLOR
+        )
+      }
+    }
+
+    large: file(relativePath: { eq: "hero-lg.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          formats: [AUTO, WEBP, AVIF]
+          layout: FULL_WIDTH
+          placeholder: DOMINANT_COLOR
+        )
+      }
+    }
+  }
+`
 
 export default Hero

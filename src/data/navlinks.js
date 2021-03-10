@@ -1,32 +1,38 @@
 import React from "react"
+import useWindowSize from "./../utils/useWindowSize"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { Link } from "gatsby"
 
-const navlinks = ({ setNavOpen }) => {
+const Navlinks = ({ setNavOpen }) => {
+  const width = useWindowSize()
+  const closeNav = () => {
+    width < 768 && setNavOpen(false)
+  }
   return (
     <ul>
       <li>
-        <Link to="/" onClick={() => setNavOpen(false)}>
+        <Link to="/" onClick={closeNav}>
           Home
         </Link>
       </li>
       <li>
-        <AnchorLink to="/#services" onAnchorLinkClick={() => setNavOpen(false)}>
+        <AnchorLink to="/#services" onAnchorLinkClick={closeNav}>
           Services
         </AnchorLink>
       </li>
       <li>
-        <Link to="/shop" onClick={() => setNavOpen(false)}>
+        <Link to="/shop" onClick={closeNav}>
           Shop
         </Link>
       </li>
       <li>
-        <AnchorLink to="/#about" onAnchorLinkClick={() => setNavOpen(false)}>
+        <AnchorLink to="/#about" onAnchorLinkClick={closeNav}>
           About Us
         </AnchorLink>
       </li>
       <li>
-        <AnchorLink to="/#contact" onAnchorLinkClick={() => setNavOpen(false)}>
+        <AnchorLink to="/#contact" onAnchorLinkClick={closeNav}>
           Contact
         </AnchorLink>
       </li>
@@ -34,4 +40,4 @@ const navlinks = ({ setNavOpen }) => {
   )
 }
 
-export default navlinks
+export default Navlinks

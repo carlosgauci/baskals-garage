@@ -1,17 +1,44 @@
 import React from "react"
-import { header, logo, clippedBG, navIcon } from "./Header.module.scss"
-import { Logo, NavIcon } from "../../images/svg"
+import NavLinks from "../../data/navlinks"
+import { Logo, NavIcon, Back } from "../../images/svg"
+import {
+  header,
+  logo,
+  clippedBG,
+  navIcon,
+  desktopNav,
+  freeQuote,
+} from "./Header.module.scss"
 
-const Header = ({ navOpen, setNavOpen }) => (
-  <header className={header}>
-    <div className={clippedBG} />
-    <section className={logo}>
-      <Logo />
-    </section>
-    <div className={navIcon} onClick={() => setNavOpen(!navOpen)}>
-      <NavIcon />
-    </div>
-  </header>
-)
+const Header = ({ navOpen, setNavOpen }) => {
+  return (
+    <header className={header}>
+      <div className={clippedBG} />
+      <section className={logo}>
+        <Logo />
+      </section>
+      <div
+        className={navIcon}
+        onClick={() => setNavOpen(!navOpen)}
+        onKeyDown={() => setNavOpen(!navOpen)}
+        role="button"
+        tabIndex={0}
+      >
+        <NavIcon />
+      </div>
+
+      <section className={desktopNav}>
+        <NavLinks />
+      </section>
+
+      <button className={freeQuote}>
+        Get Free Quote
+        <div>
+          <Back />
+        </div>
+      </button>
+    </header>
+  )
+}
 
 export default Header
