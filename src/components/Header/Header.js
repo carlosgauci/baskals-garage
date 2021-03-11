@@ -1,5 +1,6 @@
 import React from "react"
 import NavLinks from "../../data/navlinks"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { Logo, NavIcon, Back } from "../../images/svg"
 import {
   header,
@@ -31,13 +32,14 @@ const Header = ({ navOpen, setNavOpen }) => {
       <section className={desktopNav}>
         <NavLinks />
       </section>
-
-      <button className={freeQuote}>
-        Get Free Quote
-        <div>
-          <Back />
-        </div>
-      </button>
+      <AnchorLink to="/#contact">
+        <button className={freeQuote}>
+          Get Free Quote
+          <div>
+            <Back />
+          </div>
+        </button>
+      </AnchorLink>
     </header>
   )
 }
