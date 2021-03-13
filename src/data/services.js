@@ -12,28 +12,28 @@ export const data = [
     id: 1,
     title: "Mechanical Repairs",
     text:
-      "We repair all types of engineering trinkets. From Shadow Reflectors to Mechanical Squirrels and Everlook Teleporters, we can fix anything.",
+      "We repair all types of vehicles and mechanical equipment, including heavy machinery and industrial equipment.",
     icon: Repairs,
   },
   {
     id: 2,
     title: "Vehicle Servicing",
     text:
-      "We perform services on heavy machinery and all types of vehicles including cars, trucks, mechano-hogs and longbois.",
+      "Complete vehicle servicing is offered at our garage for all types of vehicles including cars, trucks & motorcycles.",
     icon: Servicing,
   },
   {
     id: 3,
     title: "Advanced Diagnostics",
     text:
-      "Advanced diagnostics such as TEXA TXT diagnostics and DAF Davie Paccar diagnostics are available at our garage.",
+      "We are fully licensed to offer Advanced diagnostics such as TEXA TXT diagnostics and DAF Davie Paccar diagnostics.",
     icon: Diagnostics,
   },
   {
     id: 4,
     title: "On-Site Breakdown Repairs",
     text:
-      "Your car broke down? Call us and we'll come to you. Emergency surgery is available 24/7. We employ only the finest dogtors.",
+      "Having car touble? Call us and we'll come to you anywhere in Gozo and repair your vehicle on site.",
     icon: Breakdown,
   },
   {
@@ -47,7 +47,8 @@ export const data = [
     id: 6,
     title: "Sale of Parts",
     text:
-      "New and rebuilt parts are available for purchase at our garage or on our online store. Visit Store.",
+      "New and rebuilt parts are available at our garage and our online shop.",
     icon: Parts,
+    button: true,
   },
 ]

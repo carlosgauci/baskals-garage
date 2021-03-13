@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { motion } from "framer-motion"
 import {
   titleContainer,
@@ -63,6 +64,7 @@ const Services = () => {
                   </div>
                   <h3>{service.title}</h3>
                   <p>{service.text}</p>
+                  {service.button && <Link to="/shop">Visit shop ></Link>}
                 </motion.article>
               )
             })}
