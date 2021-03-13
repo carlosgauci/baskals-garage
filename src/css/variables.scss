@@ -47,11 +47,6 @@ $svg-s: 1.25rem;
   color: $text;
   position: relative;
 
-  @media (min-width: 768px) {
-    width: 10rem;
-    height: 2.5rem;
-  }
-
   &:before {
     content: "";
     width: 1rem;
@@ -59,8 +54,8 @@ $svg-s: 1.25rem;
     border-top: 0.15rem solid $bg;
     border-left: 0.15rem solid $bg;
     position: absolute;
-    top: -0.25rem;
-    left: -0.25rem;
+    top: -0.3rem;
+    left: -0.3rem;
     transition: all 0.2s linear;
   }
 
@@ -71,8 +66,8 @@ $svg-s: 1.25rem;
     border-bottom: 0.15rem solid $bg;
     border-right: 0.15rem solid $bg;
     position: absolute;
-    bottom: -0.25rem;
-    right: -0.25rem;
+    bottom: -0.3rem;
+    right: -0.3rem;
     transition: all 0.2s linear;
   }
 

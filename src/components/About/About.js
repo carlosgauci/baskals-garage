@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
 import {
   about,
-  image,
   text,
   aboutImg,
   imageTwo,
@@ -12,14 +11,7 @@ import {
 } from "./About.module.scss"
 
 const About = () => {
-  const { imgOne, imgOneLarge, imgTwo, imgTwoLarge } = useStaticQuery(query)
-
-  const textImages = withArtDirection(getImage(imgOne), [
-    {
-      media: "(min-width: 768px)",
-      image: getImage(imgOneLarge),
-    },
-  ])
+  const { imgTwo, imgTwoLarge } = useStaticQuery(query)
 
   const aboutImages = withArtDirection(getImage(imgTwo), [
     {
@@ -32,14 +24,6 @@ const About = () => {
     <>
       <section className={about} id="about">
         <section className={textSection}>
-          <GatsbyImage
-            image={textImages}
-            alt="A car engine"
-            loading="lazy"
-            className={image}
-            style={{ position: "absolute" }}
-            backgroundColor="#000"
-          />
           <div className={text}>
             <h2>About Us</h2>
             <p>
@@ -76,26 +60,6 @@ const About = () => {
 
 const query = graphql`
   {
-    imgOne: file(relativePath: { eq: "about.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          formats: [AUTO, WEBP, AVIF]
-          layout: FULL_WIDTH
-          placeholder: BLURRED
-        )
-      }
-    }
-
-    imgOneLarge: file(relativePath: { eq: "about-lg.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          formats: [AUTO, WEBP, AVIF]
-          layout: FULL_WIDTH
-          placeholder: BLURRED
-        )
-      }
-    }
-
     imgTwo: file(relativePath: { eq: "about-2.jpg" }) {
       childImageSharp {
         gatsbyImageData(
