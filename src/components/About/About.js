@@ -31,7 +31,7 @@ const About = () => {
 
   const { ref, inView } = useInView({
     threshold: 0,
-    rootMargin: "0px",
+    rootMargin: "-20px",
     triggerOnce: true,
   })
 

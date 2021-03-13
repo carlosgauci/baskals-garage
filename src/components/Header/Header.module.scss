@@ -69,6 +69,7 @@
         color: $heading-color;
         font-size: 0.9rem;
         margin: 0 1rem;
+        font-weight: 700;
       }
     }
   }
@@ -84,13 +85,15 @@
     button {
       z-index: 3;
       @include btn($primary, $white);
-      width: 9.5rem;
+      width: 10rem;
       text-transform: none;
       font-family: $text-font;
       font-size: 0.9rem;
       @include flex-row;
       align-items: center;
       justify-content: center;
+      letter-spacing: 0.05rem;
+      font-weight: 400;
 
       &:before,
       &:after {

@@ -15,9 +15,11 @@ $header-height: 3.5rem;
 
 // Text
 $heading-color: $black;
-$heading-font: "Poppins", sans-serif;
+// $heading-font: "Poppins", sans-serif;
+$text-font: "Poppins", sans-serif;
 $text-color: $grey;
-$text-font: "Roboto", sans-serif;
+// $text-font: "Roboto", sans-serif;
+$heading-font: "Roboto", sans-serif;
 $svg-l: 4rem;
 $svg-s: 1.25rem;
 
@@ -41,11 +43,13 @@ $svg-s: 1.25rem;
 @mixin btn($bg, $text) {
   border: 0;
   border-radius: 0;
-  width: 9rem;
+  width: 9.5rem;
   height: 2.2rem;
   background-color: $bg;
   color: $text;
   position: relative;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
 
   &:before {
     content: "";

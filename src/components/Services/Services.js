@@ -41,7 +41,7 @@ const Services = () => {
           </motion.h2>
         )}
       </InView>
-      <InView threshold={0} triggerOnce={true}>
+      <InView threshold={0.1} triggerOnce={true}>
         {({ ref, inView }) => (
           <motion.section
             className={grid}
