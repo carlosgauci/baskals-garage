@@ -8,6 +8,7 @@
     "@fontsource/poppins": "^4.2.2",
     "@fontsource/roboto": "^4.2.2",
     "@react-google-maps/api": "^2.1.1",
+    "framer-motion": "^3.10.3",
     "gatsby": "^3.0.1",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
