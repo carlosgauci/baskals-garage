@@ -80,25 +80,28 @@
   }
 
   .freeQuote {
-    z-index: 3;
-    @include btn($primary, $white);
-    width: 9.5rem;
-    text-transform: none;
-    font-family: $text-font;
-    font-size: 0.9rem;
-    @include flex-row;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    button {
+      z-index: 3;
+      @include btn($primary, $white);
+      width: 9.5rem;
+      text-transform: none;
+      font-family: $text-font;
+      font-size: 0.9rem;
+      @include flex-row;
+      align-items: center;
+      justify-content: center;
 
-    &:before,
-    &:after {
-      display: none;
-    }
+      &:before,
+      &:after {
+        display: none;
+      }
 
-    div {
-      width: 0.75rem;
-      transform: rotate(180deg);
-      margin: 0 0 0.2rem 0.5rem;
+      div {
+        width: 0.75rem;
+        transform: rotate(180deg);
+        margin: 0 0 0.2rem 0.5rem;
+      }
     }
   }
 }

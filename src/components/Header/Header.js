@@ -32,8 +32,8 @@ const Header = ({ navOpen, setNavOpen }) => {
       <section className={desktopNav}>
         <NavLinks />
       </section>
-      <AnchorLink to="/#contact">
-        <button className={freeQuote}>
+      <AnchorLink to="/#contact" className={freeQuote}>
+        <button>
           Get Free Quote
           <div>
             <Back />

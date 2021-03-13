@@ -2,20 +2,20 @@
 
 .about {
   width: 100%;
-  height: 54rem;
+  height: 70rem;
   overflow: hidden;
 }
 
 .textSection {
   position: relative;
   width: 100%;
-  height: 30rem;
+  height: 42rem;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .text {
   @include section-center;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 6rem;
 
   h2,
   p {
@@ -41,10 +41,10 @@
 
 .aboutImg {
   width: 100%;
-  height: 30rem;
+  height: 38rem;
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   position: relative;
-  margin-top: -6.1rem;
+  margin-top: -10.1rem;
 }
 
 .imageTwo {
@@ -62,7 +62,7 @@
   z-index: 10;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 580px) {
   .about {
     @include flex-row;
     height: auto;
@@ -100,5 +100,9 @@
     max-width: 640px;
     margin-left: auto;
     margin-right: 10vw;
+  }
+
+  .text {
+    padding: 3rem 5rem 3rem 0;
   }
 }

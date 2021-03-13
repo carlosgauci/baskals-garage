@@ -43,14 +43,18 @@ const About = () => {
           <div className={text}>
             <h2>About Us</h2>
             <p>
-              We're proud to say we've been serving our local community since
-              1972. Baskal's Garage is built on the principles of honesty,
-              integrity and ongoing trust based relationships.
+              From a young age Baskal Farrugia had a passion for fixing cars and
+              mechanical equipment, and in 1972 he decided to open his first
+              Garage in the Gozitan village of Zebbug. After years of hard work
+              and success he moved to a bigger garage in Ghajnsielem, where his
+              sons eventually joined him in the business and are still operating
+              today.
             </p>
             <p>
-              Our work reflects our pride in good workmanship and we're
-              committed to providing our customers with a friendly, honest and
-              reliable experience.
+              Baskal's Garage is built on the principles of honesty, integrity
+              and ongoing trust based relationships. Our work reflects our pride
+              in good workmanship and we're committed to providing our customers
+              with a friendly, honest and reliable experience.
             </p>
           </div>
         </section>
