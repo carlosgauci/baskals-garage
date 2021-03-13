@@ -20,12 +20,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header navOpen={navOpen} setNavOpen={setNavOpen} />
       <AnimatePresence>
         {navOpen && <Navigation setNavOpen={setNavOpen} />}
       </AnimatePresence>
-      <main>{children}</main>
-      <Footer />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100%",
+        }}
+      >
+        <Header navOpen={navOpen} setNavOpen={setNavOpen} />
+        <main style={{ flex: 1 }}>{children}</main>
+        <Footer />
+      </div>
     </>
   )
 }
