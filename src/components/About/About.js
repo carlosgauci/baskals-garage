@@ -7,7 +7,7 @@ import {
   titleContainer,
   titleChildren,
   underlineVariants,
-  gridVariants,
+  aboutVariants,
 } from "../../framer/variants"
 import {
   about,
@@ -54,9 +54,9 @@ const About = () => {
               ></motion.span>
             </motion.h2>
             <motion.p
-              variants={gridVariants}
+              variants={aboutVariants}
               initial="initial"
-              animate={inView && "animateText"}
+              animate={inView && "animate"}
             >
               From a young age Baskal Farrugia had a passion for fixing cars and
               mechanical equipment, and in 1972 he decided to open his first
@@ -66,9 +66,9 @@ const About = () => {
               today.
             </motion.p>
             <motion.p
-              variants={gridVariants}
+              variants={aboutVariants}
               initial="initial"
-              animate={inView && "animateText"}
+              animate={inView && "animate"}
             >
               Baskal's Garage is built on the principles of honesty, integrity
               and ongoing trust based relationships. Our work reflects our pride

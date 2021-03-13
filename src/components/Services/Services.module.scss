@@ -22,6 +22,17 @@
 
 .colorText {
   color: $primary-light;
+  position: relative;
+}
+
+.underline {
+  content: "";
+  width: 90%;
+  height: 1rem;
+  border-bottom: 0.2rem solid $primary-light;
+  position: absolute;
+  bottom: -0.25rem;
+  left: 5%;
 }
 
 .grid {

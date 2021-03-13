@@ -2,16 +2,31 @@
 
 .experience {
   @include section-center;
+  @include flex-col;
+  align-items: center;
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .title {
   text-align: center;
   margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.underline {
+  content: "";
+  width: 90%;
+  height: 1rem;
+  border-bottom: 0.2rem solid $primary-light;
+  position: absolute;
+  bottom: -0.25rem;
+  left: 5%;
 }
 
 .colorText {
   color: $primary-light;
+  position: relative;
 }
 
 .grid {

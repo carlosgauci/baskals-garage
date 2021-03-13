@@ -3,12 +3,20 @@ import { motion } from "framer-motion"
 import {
   titleContainer,
   titleChildren,
+  underlineSingle,
   gridVariants,
 } from "../../framer/variants"
 import { InView } from "react-intersection-observer"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { data } from "../../data/services"
-import { services, svg, grid, single, colorText } from "./Services.module.scss"
+import {
+  services,
+  svg,
+  grid,
+  single,
+  colorText,
+  underline,
+} from "./Services.module.scss"
 
 const Services = () => {
   return (
@@ -22,6 +30,10 @@ const Services = () => {
             animate={inView && "animate"}
           >
             <motion.span className={colorText} variants={titleChildren}>
+              <motion.span
+                className={underline}
+                variants={underlineSingle}
+              ></motion.span>
               What{" "}
             </motion.span>
             <motion.span variants={titleChildren}>We </motion.span>

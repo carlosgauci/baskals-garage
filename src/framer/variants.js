@@ -32,50 +32,16 @@ export const navItemVariants = {
   },
 }
 
-export const aboutVariants = {
-  hiddenLeft: {
-    x: -150,
-    y: -40,
-    opacity: 0,
-  },
-  showLeft: {
-    x: 0,
-    y: 0,
-    opacity: [0.5, 1, 1],
-
-    transition: {
-      ease: "linear",
-      duration: 0.75,
-    },
-  },
-
-  hiddenRight: {
-    x: 150,
-    // y: 40,
-    opacity: 0,
-  },
-  showRight: {
-    x: 0,
-    // y: 0,
-    opacity: [0.5, 1, 1],
-
-    transition: {
-      ease: "linear",
-      duration: 0.75,
-    },
-  },
-}
-
 export const titleContainer = {
   initial: {
     opacity: 0,
   },
   animate: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-      ease: "linear",
-    },
+    // transition: {
+    //   staggerChildren: 0.3,
+    //   ease: "linear",
+    // },
   },
 }
 
@@ -100,17 +66,38 @@ export const gridVariants = {
     opacity: 1,
     y: 0,
     transition: {
+      duration: 0.75,
+      ease: "linear",
+    },
+  },
+}
+
+export const aboutVariants = {
+  initial: {
+    opacity: 0,
+    y: 25,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.25,
       duration: 0.5,
       ease: "linear",
     },
   },
+}
 
-  animateText: {
+export const sideVariants = {
+  initial: {
+    opacity: 0,
+    x: 100,
+  },
+  animate: {
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: {
-      delay: 0.75,
-      duration: 0.5,
+      duration: 0.75,
       ease: "linear",
     },
   },
@@ -123,6 +110,19 @@ export const underlineVariants = {
   animate: {
     width: "100%",
     transition: {
+      duration: 1,
+    },
+  },
+}
+
+export const underlineSingle = {
+  initial: {
+    width: "0%",
+  },
+  animate: {
+    width: "90%",
+    transition: {
+      delay: 0.5,
       duration: 1,
     },
   },
