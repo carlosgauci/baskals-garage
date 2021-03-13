@@ -38,10 +38,6 @@ export const titleContainer = {
   },
   animate: {
     opacity: 1,
-    // transition: {
-    //   staggerChildren: 0.3,
-    //   ease: "linear",
-    // },
   },
 }
 
