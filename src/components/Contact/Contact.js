@@ -27,7 +27,7 @@ const Contact = () => {
           <div className={svg}>
             <Phone />
           </div>
-          <p>(356) 2155 1154 / 7755 1154 </p>
+          <p>+356 2155 1154 / 7755 1154 </p>
         </li>
         <li>
           <div className={svg}>

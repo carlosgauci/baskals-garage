@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { AnimatePresence } from "framer-motion"
+import TopBar from "../TopBar/TopBar"
 import Header from "../Header/Header"
 import Navigation from "../Navigation/Navigation"
 import Footer from "../Footer/Footer"
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
           height: "100%",
         }}
       >
+        <TopBar />
         <Header navOpen={navOpen} setNavOpen={setNavOpen} />
         <main style={{ flex: 1 }}>{children}</main>
         <Footer />

@@ -1,0 +1,47 @@
+@import "../../css/variables.scss";
+
+.topbar {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .topbar {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: $topbar-height;
+    z-index: 5;
+    background-color: transparent;
+  }
+
+  .container {
+    @include section-center;
+    @include flex-row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .phone,
+  .hours,
+  .address {
+    @include flex-row;
+    p {
+      font-family: $heading-font;
+      font-weight: 700;
+      color: $white-text;
+    }
+  }
+
+  .hours {
+    margin: 0 2rem;
+  }
+
+  .svg {
+    width: $svg-s;
+    margin-right: 0.5rem;
+    padding-top: 0.1rem;
+  }
+}
