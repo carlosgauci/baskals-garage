@@ -7,12 +7,15 @@ import {
   hours,
   address,
   svg,
+  containerDark,
 } from "./TopBar.module.scss"
 
-const TopBar = () => {
+const TopBar = ({ location }) => {
   return (
     <section className={topbar}>
-      <div className={container}>
+      <div
+        className={`${container} ${location.pathname !== "/" && containerDark}`}
+      >
         <section className={phone}>
           <div className={svg}>
             <Phone />

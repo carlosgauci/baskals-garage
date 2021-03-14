@@ -22,26 +22,41 @@
     height: 100%;
     align-items: center;
     justify-content: space-around;
-  }
+    .phone,
+    .hours,
+    .address {
+      @include flex-row;
+      p {
+        font-family: $heading-font;
+        font-weight: 700;
+        color: $white-text;
+      }
+    }
 
-  .phone,
-  .hours,
-  .address {
-    @include flex-row;
-    p {
-      font-family: $heading-font;
-      font-weight: 700;
-      color: $white-text;
+    .hours {
+      margin: 0 2rem;
+    }
+
+    .svg {
+      width: $svg-s;
+      margin-right: 0.5rem;
+      padding-top: 0.1rem;
     }
   }
 
-  .hours {
-    margin: 0 2rem;
-  }
+  .containerDark {
+    .phone,
+    .hours,
+    .address {
+      p {
+        color: $black;
+      }
 
-  .svg {
-    width: $svg-s;
-    margin-right: 0.5rem;
-    padding-top: 0.1rem;
+      .svg {
+        svg {
+          fill: $black;
+        }
+      }
+    }
   }
 }

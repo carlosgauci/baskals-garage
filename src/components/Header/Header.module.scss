@@ -15,7 +15,7 @@
   z-index: 2;
 }
 
-.clippedBG {
+.clippedBg {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,6 +23,10 @@
   height: 100%;
   background-color: $white;
   clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.clippedBgDark {
+  background-color: $black;
 }
 
 .logo {
@@ -73,6 +77,14 @@
       }
     }
   }
+
+  .desktopNavDark {
+    ul {
+      li {
+        color: $white-text;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -111,9 +123,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .clippedBG {
+  .clippedBg {
     clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   }
+
   .desktopNav {
     ul {
       li {

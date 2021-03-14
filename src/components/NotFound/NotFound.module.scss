@@ -1,0 +1,25 @@
+@import "../../css/variables.scss";
+
+.container {
+  @include section-center;
+  @include flex-col;
+  height: 100%;
+  padding-top: $header-height;
+  justify-content: center;
+  align-items: center;
+
+  h2,
+  p {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    @include btn($primary, $white-text);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding-top: $header-height + 1.5rem;
+  }
+}

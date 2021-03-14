@@ -5,7 +5,7 @@ import Header from "../Header/Header"
 import Navigation from "../Navigation/Navigation"
 import Footer from "../Footer/Footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const [navOpen, setNavOpen] = useState(false)
 
   // Disable scrolling when nav is open
@@ -31,8 +31,8 @@ const Layout = ({ children }) => {
           height: "100%",
         }}
       >
-        <TopBar />
-        <Header navOpen={navOpen} setNavOpen={setNavOpen} />
+        <TopBar location={location} />
+        <Header navOpen={navOpen} setNavOpen={setNavOpen} location={location} />
         <main style={{ flex: 1 }}>{children}</main>
         <Footer />
       </div>

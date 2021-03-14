@@ -5,16 +5,20 @@ import { Logo, NavIcon, Back } from "../../images/svg"
 import {
   header,
   logo,
-  clippedBG,
+  clippedBg,
   navIcon,
   desktopNav,
   freeQuote,
+  clippedBgDark,
+  desktopNavDark,
 } from "./Header.module.scss"
 
-const Header = ({ navOpen, setNavOpen }) => {
+const Header = ({ navOpen, setNavOpen, location }) => {
   return (
     <header className={header}>
-      <div className={clippedBG} />
+      <div
+        className={`${clippedBg} ${location.pathname !== "/" && clippedBgDark}`}
+      />
       <section className={logo}>
         <Logo />
       </section>
@@ -29,7 +33,11 @@ const Header = ({ navOpen, setNavOpen }) => {
         <NavIcon />
       </div>
 
-      <section className={desktopNav}>
+      <section
+        className={`${desktopNav} ${
+          location.pathname !== "/" && desktopNavDark
+        }`}
+      >
         <NavLinks />
       </section>
       <AnchorLink to="/#contact" className={freeQuote}>
