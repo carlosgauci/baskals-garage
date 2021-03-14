@@ -1,3 +1,5 @@
+// Hero section on the index page
+
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
@@ -13,6 +15,7 @@ import {
 } from "./Hero.module.scss"
 
 const Hero = () => {
+  // Get the hero images and set art direction
   const { small, large } = useStaticQuery(query)
   const heroSmall = getImage(small)
   const heroLarge = getImage(large)
@@ -54,6 +57,7 @@ const Hero = () => {
   )
 }
 
+// Hero images graphql query
 const query = graphql`
   {
     small: file(relativePath: { eq: "hero.jpg" }) {

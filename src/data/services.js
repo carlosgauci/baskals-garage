@@ -1,3 +1,5 @@
+// Data for the Services section (what we do)
+
 import {
   Breakdown,
   Diagnostics,
@@ -40,7 +42,7 @@ export const data = [
     id: 5,
     title: "Complete Engine Rebuilding",
     text:
-      "We rebuild engines like they're made out of lego. Srsly we are wizards. Imagine going to our competitors lmao.",
+      "Complete vehicle servicing is offered at our garage for all types of vehicles including cars, trucks & motorcycles.",
     icon: Engine,
   },
   {

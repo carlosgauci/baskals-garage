@@ -1,5 +1,6 @@
 @import "../../css/variables.scss";
 
+// Navigation container, fixed to fill whole screen
 .nav {
   position: fixed;
   z-index: 999;
@@ -10,6 +11,7 @@
   background-color: $primary;
 }
 
+// Inner container for logo & nav links
 .container {
   @include section-center;
   height: 100%;
@@ -20,11 +22,13 @@
   position: relative;
 }
 
+// Div container for logo
 .logo {
   width: 12rem;
   margin-bottom: 1rem;
 }
 
+// nav
 .links {
   @include flex-col;
   padding: 2rem 0;
@@ -40,6 +44,7 @@
   }
 }
 
+// Close nav icon
 .back {
   width: $svg-s;
   position: absolute;

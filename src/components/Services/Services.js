@@ -1,3 +1,5 @@
+// Services section (what we do) on the index page
+
 import React from "react"
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
@@ -22,6 +24,7 @@ import {
 const Services = () => {
   return (
     <section className={services} id="services">
+      {/* InView component to trigger title animation with intersection observer */}
       <InView threshold={0.25} triggerOnce={true}>
         {({ ref, inView }) => (
           <motion.h2
@@ -31,6 +34,7 @@ const Services = () => {
             animate={inView && "animate"}
           >
             <motion.span className={colorText} variants={titleChildren}>
+              {/* Underline span animated with framer-motion */}
               <motion.span
                 className={underline}
                 variants={underlineSingle}
@@ -42,6 +46,8 @@ const Services = () => {
           </motion.h2>
         )}
       </InView>
+
+      {/* Trigger grid animation with intersection observer */}
       <InView threshold={0.1} triggerOnce={true}>
         {({ ref, inView }) => (
           <motion.section
@@ -52,6 +58,7 @@ const Services = () => {
             animate={inView && "animate"}
             transition={{ staggerChildren: 0.15 }}
           >
+            {/* Create individual services cards from the imported data array */}
             {data.map(service => {
               return (
                 <motion.article
@@ -64,13 +71,15 @@ const Services = () => {
                   </div>
                   <h3>{service.title}</h3>
                   <p>{service.text}</p>
-                  {service.button && <Link to="/shop">Visit shop ></Link>}
+                  {service.button && <Link to="/shop">Visit shop</Link>}
                 </motion.article>
               )
             })}
           </motion.section>
         )}
       </InView>
+
+      {/* Button with anchor to contact form */}
       <AnchorLink to="/#contact">
         <button>Contact Us</button>
       </AnchorLink>

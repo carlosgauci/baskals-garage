@@ -1,3 +1,5 @@
+// Top Bar on top of the header with contact info, hidden under 1024px
+
 import React from "react"
 import { LocationPin, Phone, Clock } from "../../images/svg"
 import {
@@ -13,6 +15,7 @@ import {
 const TopBar = ({ location }) => {
   return (
     <section className={topbar}>
+      {/* Add a second class to topbar if not on index page */}
       <div
         className={`${container} ${location.pathname !== "/" && containerDark}`}
       >

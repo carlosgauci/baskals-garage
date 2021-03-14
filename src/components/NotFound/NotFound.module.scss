@@ -1,5 +1,6 @@
 @import "../../css/variables.scss";
 
+// Section container
 .container {
   @include section-center;
   @include flex-col;
@@ -13,12 +14,14 @@
     margin-bottom: 1rem;
   }
 
+  // Back button
   button {
     @include btn($primary, $white-text);
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  // Increase padding on larger screens due to topbar
   .container {
     padding-top: $header-height + 1.5rem;
   }

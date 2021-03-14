@@ -10,6 +10,7 @@ const Footer = () => {
       <section className={container}>
         <Contact />
         <FindUs />
+        {/* Nav section hidden below 1024px */}
         <nav>
           <h4>Navigate</h4>
           <NavLinks />

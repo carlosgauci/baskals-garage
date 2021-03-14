@@ -1,3 +1,5 @@
+// Contact form on the index page
+
 import React from "react"
 import {
   container,
@@ -12,6 +14,7 @@ const ContactForm = () => {
   return (
     <section className={container} id="contact">
       <h2>Get a Quote</h2>
+      {/* Netlify contact form, sends user to /success page after submit */}
       <form
         className={form}
         name="contact-form"

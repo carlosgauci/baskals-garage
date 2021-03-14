@@ -1,5 +1,6 @@
 @import "../../css/variables.scss";
 
+// Header outer container
 .header {
   position: absolute;
   left: 0;
@@ -15,6 +16,7 @@
   z-index: 2;
 }
 
+// Header clipped inner container
 .clippedBg {
   position: absolute;
   top: 0;
@@ -25,10 +27,12 @@
   clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
 }
 
+// Dark colored clipped container for use on certain pages
 .clippedBgDark {
   background-color: $black;
 }
 
+// Logo container
 .logo {
   height: 4.5rem;
   background-color: $primary;
@@ -42,27 +46,32 @@
   }
 }
 
+// Nav icon to open/close mobile nav
 .navIcon {
   width: 2rem;
   z-index: 3;
   justify-self: flex-end;
 }
 
+// Hide the desktop navigation and free quote button on mobile devices
 .desktopNav,
 .freeQuote {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
+  // Unset justify to fit desktop nav and reduce padding
   .header {
     padding: 0 6%;
     justify-content: unset;
   }
 
+  // Hide mobile nav icon
   .navIcon {
     display: none;
   }
 
+  // Show & style desktop nav
   .desktopNav {
     display: block;
     margin: 0 auto;
@@ -78,6 +87,7 @@
     }
   }
 
+  // Dark desktop nav for use on certain pages
   .desktopNavDark {
     ul {
       li {
@@ -88,11 +98,13 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  // Make space above header for TopBar component
   .header {
     padding: 0 5%;
     top: calc(#{$topbar-height} + 1rem);
   }
 
+  // Display the "get free quote" button
   .freeQuote {
     display: block;
     button {
@@ -113,6 +125,7 @@
         display: none;
       }
 
+      // Arrow icon inside the button
       div {
         width: 0.75rem;
         transform: rotate(180deg);
@@ -123,10 +136,12 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  // Modify the clipped background so it doesnt looks too "sharp" as the screen gets bigger
   .clippedBg {
     clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   }
 
+  // Add more margin to nav items
   .desktopNav {
     ul {
       li {

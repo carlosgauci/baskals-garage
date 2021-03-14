@@ -1,5 +1,6 @@
 @import "../../css/variables.scss";
 
+// Hero container
 .hero {
   position: relative;
   min-height: 100vh;
@@ -8,6 +9,7 @@
   background-color: $black;
 }
 
+// Hero image (GatsbyImage component)
 .image {
   top: 0;
   left: 0;
@@ -16,6 +18,7 @@
   z-index: 2;
 }
 
+// Text section container
 .container {
   @include section-center;
   @include flex-col;
@@ -25,6 +28,7 @@
   z-index: 2;
 }
 
+// Text section
 .text {
   max-width: 31rem;
   z-index: 2;
@@ -35,6 +39,7 @@
   }
 }
 
+// Buttons div in text section
 .buttons {
   @include flex-col;
 }
@@ -49,6 +54,7 @@
 }
 
 @media only screen and (min-width: 350px) {
+  // Set buttons adjacent & fix margins
   .buttons {
     @include flex-row;
   }
@@ -60,6 +66,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+  // Add a max width to text section and increase font sizes
   .text {
     max-width: 40rem;
 

@@ -1,20 +1,23 @@
+// Navigation links
+
 import React from "react"
 import { motion } from "framer-motion"
 import { navItemVariants } from "../framer/variants"
 import useWindowSize from "./../utils/useWindowSize"
-
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { Link } from "gatsby"
 
 const Navlinks = ({ setNavOpen, animated }) => {
+  // Get window width so setNavOpen isn't called on large screens where mobile nav is disabled
   const width = useWindowSize()
   const closeNav = () => {
     width < 768 && setNavOpen(false)
   }
+
   return (
     <ul>
       <motion.li
-        variants={animated ? navItemVariants : undefined}
+        variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
         transition={{ duration: 0.4, delay: 0.6 }}
@@ -23,8 +26,9 @@ const Navlinks = ({ setNavOpen, animated }) => {
           Home
         </Link>
       </motion.li>
+
       <motion.li
-        variants={animated ? navItemVariants : undefined}
+        variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
         transition={{ duration: 0.4, delay: 0.7 }}
@@ -33,8 +37,9 @@ const Navlinks = ({ setNavOpen, animated }) => {
           Services
         </AnchorLink>
       </motion.li>
+
       <motion.li
-        variants={animated ? navItemVariants : undefined}
+        variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
         transition={{ duration: 0.4, delay: 0.8 }}
@@ -43,8 +48,9 @@ const Navlinks = ({ setNavOpen, animated }) => {
           Shop
         </Link>
       </motion.li>
+
       <motion.li
-        variants={animated ? navItemVariants : undefined}
+        variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
         transition={{ duration: 0.4, delay: 0.9 }}
@@ -53,8 +59,9 @@ const Navlinks = ({ setNavOpen, animated }) => {
           About Us
         </AnchorLink>
       </motion.li>
+
       <motion.li
-        variants={animated ? navItemVariants : undefined}
+        variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
         transition={{ duration: 0.4, delay: 1 }}

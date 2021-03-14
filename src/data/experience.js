@@ -1,3 +1,5 @@
+// Data for the experience section (why choose us)
+
 import { Mechanic, Thumbs, Pricing } from "../images/svg"
 
 export const data = [

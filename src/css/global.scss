@@ -1,5 +1,6 @@
 @import "./variables.scss";
 
+// Height 100% so we can get 100vh without browser topbar issues on mobile
 html,
 body,
 #___gatsby,

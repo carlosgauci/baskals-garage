@@ -16,12 +16,16 @@ import {
 const Header = ({ navOpen, setNavOpen, location }) => {
   return (
     <header className={header}>
+      {/* Show a light colored header on the index page, and a dark one on other pages */}
       <div
         className={`${clippedBg} ${location.pathname !== "/" && clippedBgDark}`}
       />
+
       <section className={logo}>
         <Logo />
       </section>
+
+      {/* Nav icon to open & close mobile navigation */}
       <div
         className={navIcon}
         onClick={() => setNavOpen(!navOpen)}
@@ -33,6 +37,7 @@ const Header = ({ navOpen, setNavOpen, location }) => {
         <NavIcon />
       </div>
 
+      {/* Show a dark text desktop nav on the index page, and a light one on other pages */}
       <section
         className={`${desktopNav} ${
           location.pathname !== "/" && desktopNavDark
@@ -40,6 +45,8 @@ const Header = ({ navOpen, setNavOpen, location }) => {
       >
         <NavLinks />
       </section>
+
+      {/* Get free quote button anchored to contact form */}
       <AnchorLink to="/#contact" className={freeQuote}>
         <button>
           Get Free Quote

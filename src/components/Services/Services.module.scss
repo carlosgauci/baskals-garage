@@ -1,30 +1,35 @@
 @import "../../css/variables.scss";
 
+// Section container
 .services {
   @include section-center;
   @include flex-col;
   padding: 2rem 0;
 
+  // Section title
   h2 {
     text-align: center;
     margin-bottom: 2rem;
   }
 
-  button {
-    @include btn($primary, $white-text);
-    margin: 1.5rem 0;
-  }
+  // Contact us link & button
   a {
     display: block;
     margin: 0 auto;
+    button {
+      @include btn($primary, $white-text);
+      margin: 1.5rem 0;
+    }
   }
 }
 
+// Span to color first word of the title
 .colorText {
   color: $primary-light;
   position: relative;
 }
 
+// Underline span animated with framer-motion
 .underline {
   content: "";
   width: 90%;
@@ -35,11 +40,13 @@
   left: 5%;
 }
 
+// Services grid
 .grid {
   @include flex-col;
   align-items: center;
 }
 
+// Single service card
 .single {
   max-width: 22rem;
   @include flex-col;
@@ -60,12 +67,14 @@
   }
 }
 
+// svg container inside card
 .svg {
   width: $svg-l;
   margin-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
+  // Increase padding on larger screens
   .services {
     padding: 3rem 0;
 
@@ -74,6 +83,7 @@
     }
   }
 
+  // Set grid to flex-row to have adjacent cards and increase card margin
   .grid {
     @include flex-row;
     flex-wrap: wrap;
@@ -87,6 +97,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  // Further increase padding/margins on larger screens
   .services {
     padding: 5rem 0;
 

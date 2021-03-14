@@ -1,3 +1,5 @@
+// Contact Us section in the footer
+
 import React from "react"
 import { LocationPin, Mail, Phone, Clock, Facebook } from "../../images/svg"
 import { list, svg } from "./Contact.module.scss"

@@ -8,6 +8,7 @@ const SEO = ({ title, description, image, article, index }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
+  // Get & set default data from site metadata query
   const {
     defaultTitle,
     defaultDescription,
@@ -56,6 +57,7 @@ SEO.defaultProps = {
   article: false,
 }
 
+// Graphql query for site metadata
 const query = graphql`
   query SEO {
     site {

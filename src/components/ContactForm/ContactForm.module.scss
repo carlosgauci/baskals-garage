@@ -1,5 +1,6 @@
 @import "../../css/variables.scss";
 
+// Contact form container
 .container {
   background-color: $primary;
   padding: 1rem 1rem;
@@ -9,6 +10,7 @@
   border: 1rem solid $primary-light;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+  // Title at top of form
   h2 {
     color: $white-text;
     margin-bottom: 1rem;
@@ -16,6 +18,7 @@
   }
 }
 
+// Contact form
 .form {
   font-family: $text-font;
   font-size: 0.9rem;
@@ -33,6 +36,7 @@
     background-color: $white;
   }
 
+  // Submit btn
   button {
     @include btn($white-text, $black);
     display: block;
@@ -41,17 +45,21 @@
 }
 
 @media only screen and (min-width: 768px) {
+  // Decrease width, add more padding & center the form
   .container {
     width: 80%;
     margin: 2rem auto 0;
     padding: 1rem 2rem;
   }
+
+  // Resize inputs to half the container minus their margin, to fit adjacently
   .form {
     input {
       width: calc(50% - 0.5rem);
     }
   }
 
+  // Add margins to inputs
   .name,
   .phone {
     margin-right: 0.5rem;

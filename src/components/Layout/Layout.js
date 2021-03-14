@@ -6,9 +6,10 @@ import Navigation from "../Navigation/Navigation"
 import Footer from "../Footer/Footer"
 
 const Layout = ({ children, location }) => {
+  // State for opening and closing mobile navigation
   const [navOpen, setNavOpen] = useState(false)
 
-  // Disable scrolling when nav is open
+  // Disable scrolling when mobile nav is open
   let html
   if (typeof document !== "undefined") {
     html = document.querySelector("html")
@@ -21,9 +22,12 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
+      {/* AnimatePresence to animate mobile navigation in and out */}
       <AnimatePresence>
         {navOpen && <Navigation setNavOpen={setNavOpen} />}
       </AnimatePresence>
+
+      {/* Container div set to flex-col and <main> set to flex:1, to achieve 100vh even on short pages like cart or 404 (without google chrome topbar ruining our experience) */}
       <div
         style={{
           display: "flex",
@@ -31,6 +35,8 @@ const Layout = ({ children, location }) => {
           height: "100%",
         }}
       >
+        {/* Pass location to TopBar & Header to change their styling depending on page */}
+        {/* TopBar hidden under 1024px */}
         <TopBar location={location} />
         <Header navOpen={navOpen} setNavOpen={setNavOpen} location={location} />
         <main style={{ flex: 1 }}>{children}</main>

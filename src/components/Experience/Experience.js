@@ -1,3 +1,5 @@
+// Experience (why choose us) section on the index page
+
 import React from "react"
 import { motion } from "framer-motion"
 import {
@@ -22,6 +24,7 @@ import {
 const Experience = () => {
   return (
     <section className={experience}>
+      {/* InView component to trigger title animation by intersection observer */}
       <InView threshold={0.25} triggerOnce={true}>
         {({ ref, inView }) => (
           <motion.h2
@@ -32,6 +35,7 @@ const Experience = () => {
             animate={inView && "animate"}
           >
             <motion.span className={colorText} variants={titleChildren}>
+              {/* Underline span to be animated */}
               <motion.span
                 className={underline}
                 variants={underlineSingle}
@@ -43,6 +47,7 @@ const Experience = () => {
           </motion.h2>
         )}
       </InView>
+      {/* Trigger experience cards to load by intersection observer */}
       <InView threshold={0.1} triggerOnce={true}>
         {({ ref, inView }) => (
           <motion.section
@@ -53,6 +58,7 @@ const Experience = () => {
             animate={inView && "animate"}
             transition={{ staggerChildren: 0.15 }}
           >
+            {/* Create individual cards from the imported data array */}
             {data.map(item => {
               return (
                 <motion.article

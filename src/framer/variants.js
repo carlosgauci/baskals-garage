@@ -1,3 +1,6 @@
+// Framer-motion variants
+
+// Mobile nav container, slides in from right
 export const navVariants = {
   initial: {
     x: 768,
@@ -14,6 +17,7 @@ export const navVariants = {
   },
 }
 
+// Mobile nav items (logo, links)
 export const navItemVariants = {
   hiddenLogo: {
     opacity: 0,
@@ -32,6 +36,7 @@ export const navItemVariants = {
   },
 }
 
+// Animation for title container, to set staggerChildren on
 export const titleContainer = {
   initial: {
     opacity: 0,
@@ -41,6 +46,7 @@ export const titleContainer = {
   },
 }
 
+// Title children (individual words)
 export const titleChildren = {
   initial: {
     opacity: 0,
@@ -53,6 +59,7 @@ export const titleChildren = {
   },
 }
 
+// Services section grid items
 export const gridVariants = {
   initial: {
     opacity: 0,
@@ -68,6 +75,7 @@ export const gridVariants = {
   },
 }
 
+// About us text
 export const aboutVariants = {
   initial: {
     opacity: 0,
@@ -84,6 +92,7 @@ export const aboutVariants = {
   },
 }
 
+// Experience section items
 export const sideVariants = {
   initial: {
     opacity: 0,
@@ -99,6 +108,7 @@ export const sideVariants = {
   },
 }
 
+// Underline animation for whole title (About us)
 export const underlineVariants = {
   initial: {
     width: "0%",
@@ -111,6 +121,7 @@ export const underlineVariants = {
   },
 }
 
+// Underline animation for single word (Services, Experience sections)
 export const underlineSingle = {
   initial: {
     width: "0%",

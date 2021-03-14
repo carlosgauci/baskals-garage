@@ -1,11 +1,13 @@
 @import "../../css/variables.scss";
 
+// About section container
 .about {
   width: 100%;
   height: 70rem;
   overflow: hidden;
 }
 
+// Text section container
 .textSection {
   position: relative;
   width: 100%;
@@ -15,6 +17,7 @@
   z-index: 2;
 }
 
+// Text div
 .text {
   @include section-center;
   padding: 2rem 0 6rem;
@@ -35,6 +38,7 @@
   }
 }
 
+// Underline span that is animated with framer-motion
 .underline {
   content: "";
   width: 0%;
@@ -45,6 +49,7 @@
   left: 0;
 }
 
+// Image section container
 .aboutImg {
   width: 100%;
   height: 38rem;
@@ -54,11 +59,13 @@
   z-index: 1;
 }
 
-.imageTwo {
+// About image (GatsbyImage component)
+.image {
   height: 100%;
   width: 100%;
 }
 
+// Overlay on top of image
 .overlay {
   position: absolute;
   top: 0;
@@ -70,11 +77,13 @@
 }
 
 @media only screen and (min-width: 580px) {
+  // Turn the section into flex-row so text & image sections fit side by side
   .about {
     @include flex-row;
     height: auto;
   }
 
+  // Change clip-paths and sizes of sections to fit nicely together
   .textSection {
     width: 60vw;
     height: unset;
@@ -102,14 +111,12 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  // Add more padding and adjust text section to look nicer on large screens
   .text {
     width: 50vw;
     max-width: 640px;
     margin-left: auto;
     margin-right: 10vw;
-  }
-
-  .text {
     padding: 5rem 3rem 5rem 0;
   }
 }

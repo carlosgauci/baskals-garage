@@ -1,3 +1,5 @@
+// Mobile navigation (animates in from the right side)
+
 import React from "react"
 import { motion } from "framer-motion"
 import { navVariants, navItemVariants } from "../../framer/variants"
@@ -24,10 +26,13 @@ const Navigation = ({ setNavOpen }) => {
         >
           <Logo />
         </motion.div>
-        <div className={links}>
+
+        <nav className={links}>
           <Navlinks setNavOpen={setNavOpen} animated={true} />
-        </div>
+        </nav>
       </section>
+
+      {/* Close nav button */}
       <span
         className={back}
         onClick={() => setNavOpen(false)}

@@ -1,3 +1,5 @@
+// NotFound component for 404 page
+
 import React from "react"
 import { Link } from "gatsby"
 import { container } from "./NotFound.module.scss"

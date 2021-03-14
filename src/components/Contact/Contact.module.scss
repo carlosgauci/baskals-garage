@@ -1,11 +1,11 @@
 @import "../../css/variables.scss";
 
+// Contact info ul
 .list {
   li {
     display: grid;
     grid-template-columns: auto 1fr;
     margin-bottom: 0.5rem;
-    // align-items: center;
 
     p {
       font-size: 1rem;
@@ -13,6 +13,7 @@
   }
 }
 
+// SVG container
 .svg {
   width: $svg-s;
   margin-right: 0.5rem;
