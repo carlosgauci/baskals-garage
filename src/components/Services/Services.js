@@ -56,7 +56,7 @@ const Services = () => {
             variants={titleContainer}
             initial="initial"
             animate={inView && "animate"}
-            transition={{ staggerChildren: 0.15 }}
+            transition={{ staggerChildren: 0.1 }}
           >
             {/* Create individual services cards from the imported data array */}
             {data.map(service => {

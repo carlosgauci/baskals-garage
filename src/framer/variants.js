@@ -69,7 +69,7 @@ export const gridVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       ease: "linear",
     },
   },
@@ -96,13 +96,13 @@ export const aboutVariants = {
 export const sideVariants = {
   initial: {
     opacity: 0,
-    x: 100,
+    x: 50,
   },
   animate: {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       ease: "linear",
     },
   },
@@ -116,7 +116,7 @@ export const underlineVariants = {
   animate: {
     width: "100%",
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
 }
@@ -129,8 +129,7 @@ export const underlineSingle = {
   animate: {
     width: "90%",
     transition: {
-      delay: 0.5,
-      duration: 1,
+      duration: 0.5,
     },
   },
 }
