@@ -32,12 +32,12 @@
 // Underline span animated with framer-motion
 .underline {
   content: "";
-  width: 90%;
+  position: absolute;
+  width: 95%;
   height: 1rem;
   border-bottom: 0.2rem solid $primary-light;
-  position: absolute;
-  bottom: -0.25rem;
-  left: 5%;
+  bottom: -0.15rem;
+  left: 2.5%;
 }
 
 // Services grid

@@ -38,7 +38,7 @@ const Navlinks = ({ setNavOpen, animated }) => {
         </AnchorLink>
       </motion.li>
 
-      <motion.li
+      {/* <motion.li
         variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
@@ -47,13 +47,13 @@ const Navlinks = ({ setNavOpen, animated }) => {
         <Link to="/shop" onClick={closeNav}>
           Shop
         </Link>
-      </motion.li>
+      </motion.li> */}
 
       <motion.li
         variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
-        transition={{ duration: 0.4, delay: 0.9 }}
+        transition={{ duration: 0.4, delay: 0.8 }}
       >
         <AnchorLink to="/#about" onAnchorLinkClick={closeNav}>
           About Us
@@ -64,7 +64,7 @@ const Navlinks = ({ setNavOpen, animated }) => {
         variants={animated && navItemVariants}
         initial="hidden"
         animate="show"
-        transition={{ duration: 0.4, delay: 1 }}
+        transition={{ duration: 0.4, delay: 0.9 }}
       >
         <AnchorLink to="/#contact" onAnchorLinkClick={closeNav}>
           Contact

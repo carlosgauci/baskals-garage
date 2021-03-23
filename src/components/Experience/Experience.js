@@ -40,9 +40,9 @@ const Experience = () => {
                 className={underline}
                 variants={underlineSingle}
               ></motion.span>
-              Why{" "}
+              Why
             </motion.span>
-            <motion.span variants={titleChildren}>Choose </motion.span>
+            <motion.span variants={titleChildren}> Choose </motion.span>
             <motion.span variants={titleChildren}>Us</motion.span>
           </motion.h2>
         )}

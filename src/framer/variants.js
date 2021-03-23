@@ -127,7 +127,7 @@ export const underlineSingle = {
     width: "0%",
   },
   animate: {
-    width: "90%",
+    width: "95%",
     transition: {
       duration: 0.5,
     },

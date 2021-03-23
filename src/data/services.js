@@ -48,9 +48,8 @@ export const data = [
   {
     id: 6,
     title: "Sale of Parts",
-    text:
-      "New and rebuilt parts are available at our garage and our online shop.",
+    text: "New and rebuilt parts are available for purchase at our garage.",
     icon: Parts,
-    button: true,
+    // button: true,
   },
 ]

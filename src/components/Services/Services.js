@@ -39,9 +39,9 @@ const Services = () => {
                 className={underline}
                 variants={underlineSingle}
               ></motion.span>
-              What{" "}
+              What
             </motion.span>
-            <motion.span variants={titleChildren}>We </motion.span>
+            <motion.span variants={titleChildren}> We </motion.span>
             <motion.span variants={titleChildren}>Do</motion.span>
           </motion.h2>
         )}
