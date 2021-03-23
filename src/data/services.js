@@ -21,7 +21,7 @@ export const data = [
     id: 2,
     title: "Vehicle Servicing",
     text:
-      "Complete vehicle servicing is offered at our garage for all types of vehicles including cars, trucks & motorcycles.",
+      "Complete vehicle servicing is offered at our garage for all types of vehicles including cars & trucks.",
     icon: Servicing,
   },
   {
@@ -42,7 +42,7 @@ export const data = [
     id: 5,
     title: "Complete Engine Rebuilding",
     text:
-      "Complete vehicle servicing is offered at our garage for all types of vehicles including cars, trucks & motorcycles.",
+      "We offer complete engine rebuilding services at our garage for cars, trucks and heavy machinery equipment.",
     icon: Engine,
   },
   {
