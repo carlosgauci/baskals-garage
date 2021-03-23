@@ -44,6 +44,12 @@
   }
 }
 
+// Success message
+.success {
+  text-align: center;
+  color: $white-text;
+}
+
 @media only screen and (min-width: 768px) {
   // Decrease width, add more padding & center the form
   .container {
