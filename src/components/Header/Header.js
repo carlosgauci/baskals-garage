@@ -1,7 +1,7 @@
 import React from "react"
 import NavLinks from "../../data/navlinks"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import { Logo, NavIcon, Back } from "../../images/svg"
+import { Logo, NavIcon } from "../../images/svg"
 import {
   header,
   logo,
@@ -48,12 +48,7 @@ const Header = ({ navOpen, setNavOpen, location }) => {
 
       {/* Get free quote button anchored to contact form */}
       <AnchorLink to="/#contact" className={freeQuote}>
-        <button>
-          Get Free Quote
-          <div>
-            <Back />
-          </div>
-        </button>
+        <button>Get A Free Quote</button>
       </AnchorLink>
     </header>
   )
