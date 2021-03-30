@@ -79,6 +79,7 @@ const ContactForm = () => {
             placeholder="Your name"
             aria-label="Your Name"
             className={name}
+            required
           />
 
           <input
@@ -87,6 +88,7 @@ const ContactForm = () => {
             placeholder="Your email address"
             aria-label="Your email address"
             className={email}
+            required
           />
 
           <input
@@ -95,6 +97,7 @@ const ContactForm = () => {
             placeholder="Phone number"
             aria-label="Your Phone Number"
             className={phone}
+            required
           />
 
           <input
@@ -110,6 +113,7 @@ const ContactForm = () => {
             rows="7"
             placeholder="Type your message here..."
             aria-label="Your Message"
+            required
           ></textarea>
           <button type="submit">Submit</button>
         </form>
