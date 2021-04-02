@@ -23,7 +23,10 @@ const TopBar = ({ location }) => {
           <div className={svg}>
             <Phone />
           </div>
-          <p>+356 2155 1154 / 7755 1154</p>
+          <p>
+            <a href="tel:+35621551154">+356 2155 1154</a> /{" "}
+            <a href="tel:+35677551154">+356 7755 1154</a>
+          </p>
         </section>
         <section className={hours}>
           <div className={svg}>
@@ -35,7 +38,15 @@ const TopBar = ({ location }) => {
           <div className={svg}>
             <LocationPin />
           </div>
-          <p>Triq Il-Provigarju, Għajnsielem, Gozo</p>
+          <p>
+            <a
+              href="https://g.page/baskals-garage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Triq Il-Provigarju, Għajnsielem, Gozo
+            </a>
+          </p>
         </section>
       </div>
     </section>

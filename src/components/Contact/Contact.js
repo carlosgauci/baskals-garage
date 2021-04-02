@@ -14,9 +14,15 @@ const Contact = () => {
             <LocationPin />
           </div>
           <p>
-            Baskal's Garage, Triq Il-Provigarju,
-            <br />
-            Għajnsielem, Gozo
+            <a
+              href="https://g.page/baskals-garage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Baskal's Garage, Triq Il-Provigarju,
+              <br />
+              Għajnsielem, Gozo
+            </a>
           </p>
         </li>
         <li>
@@ -29,13 +35,20 @@ const Contact = () => {
           <div className={svg}>
             <Phone />
           </div>
-          <p>+356 2155 1154 / 7755 1154 </p>
+          <p>
+            <a href="tel:+35621551154">+356 2155 1154</a> /{" "}
+            <a href="tel:+35677551154">7755 1154</a>
+          </p>
         </li>
         <li>
           <div className={svg}>
             <Mail />
           </div>
-          <p>baskal@baskalsgarage.com</p>
+          <p>
+            <a href="mailto:baskal@baskalsgarage.com">
+              baskal@baskalsgarage.com
+            </a>
+          </p>
         </li>
         <li>
           <div className={svg}>
