@@ -28,7 +28,7 @@ const Navigation = ({ setNavOpen }) => {
         </motion.div>
 
         <nav className={links}>
-          <Navlinks setNavOpen={setNavOpen} animated={true} />
+          <Navlinks setNavOpen={setNavOpen} mobile={true} />
         </nav>
       </section>
 
