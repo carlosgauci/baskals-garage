@@ -18,7 +18,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-anchor-links`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        duration: 1000,
+      },
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
